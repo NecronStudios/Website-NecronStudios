@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VOID — dynamic inventory and equipment mechanics from the current design document.">
+  <meta name="theme-color" content="#050505"><title>VOID Mechanics — Necron Studios</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png"><link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+  <div class="site-noise" aria-hidden="true"></div><div class="cursor" aria-hidden="true"><span></span></div><div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/necron-official.png" alt="Necron Studios" class="brand-mark"><span class="brand-name">NECRON <em>STUDIOS</em></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="studio.html">Studio</a><a class="active" href="void.html">VOID</a><a href="timeline.html">Archive</a><a href="contact.html">Contact</a></nav>
+    <div class="header-status"><i></i> VOID / SYSTEMS</div>
+  </header>
+
+  <main>
+    <section class="mechanics-hero"><div class="section-number">02</div><div><p class="kicker reveal">VOID / DYNAMIC SYSTEMS</p><h1 class="reveal">FEEL THE<br><em>WEIGHT.</em></h1></div><div class="hero-note reveal">VOID treats carried objects and equipment as physical elements of the world. The goal is not to manage abstract slots, but to make the player feel that the protagonist actually carries, manipulates, loses and recovers things.</div></section>
+
+    <section class="mechanics-grid-wrap"><div class="section-top"><div><p class="kicker">TEN MECHANICS</p><div class="eyebrow-rule"></div></div><span class="section-meta">CURRENT DESIGN / PUBLIC SUMMARY</span></div>
+      <div class="mechanics-grid">
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">01</span><span class="mechanic-tag">Inventory</span></div><h2>Physical Backpack</h2><p>At the beginning, the protagonist carries a real backpack with more than four spaces. To access it, the character removes it, places it on the ground and crouches.</p><ul><li>Fully diegetic opening</li><li>About three seconds to open</li><li>About three seconds to close</li><li>The protagonist is immobile and vulnerable during the interaction</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">02</span><span class="mechanic-tag">Progression</span></div><h2>Loss of the Backpack</h2><p>At a certain point, the protagonist loses the backpack. From then on, storage is handled physically through the pockets of the trousers.</p><ul><li>The post-backpack inventory is not a traditional inventory screen</li><li>The change is physical, not cosmetic</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">03</span><span class="mechanic-tag">Equipment</span></div><h2>Four Physical Pockets</h2><p>Four carry locations represent two rear pockets, one right-side pocket and one left-side pocket. These are physical locations rather than abstract interface slots.</p><ul><li>Choose the pocket when storing an item</li><li>The protagonist performs an animation to place it there</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">04</span><span class="mechanic-tag">Storage</span></div><h2>Shared Pocket Capacity</h2><p>A pocket can contain multiple different objects at the same time. There is no rule that one slot equals one item.</p><ul><li>Batteries, keys and other objects can share a pocket</li><li>Stacks remain physical objects</li><li>The limit depends on actual space and object properties</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">05</span><span class="mechanic-tag">Physics</span></div><h2>Weight, Density & Volume</h2><p>Objects have their own physical properties, including weight, density and volume. Their characteristics affect the load carried by the pockets.</p><ul><li>Different objects can behave differently despite similar occupied space</li><li>Carried weight primarily affects fatigue time</li><li>Weight is not intended to drastically reduce maximum speed</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">06</span><span class="mechanic-tag">Risk</span></div><h2>Dynamic Object Physics</h2><p>Objects can move inside the pockets and, under certain conditions, escape. Movement increases the possibility but does not guarantee a loss.</p><ul><li>Running, abrupt changes, jumps and falls can raise the risk</li><li>Risk depends on the individual object's properties</li><li>One object can fall while others remain</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">07</span><span class="mechanic-tag">Recovery</span></div><h2>Dropped Objects Stay in the World</h2><p>When an object falls, it remains physically present instead of disappearing immediately. The player can return and recover it.</p><ul><li>A chase can become a choice between escape and recovery</li><li>A dangerous location may force the player to leave the item behind</li></ul></article>
+        <article class="mechanic reveal"><div class="mechanic-top"><span class="mechanic-index">08</span><span class="mechanic-tag">Optimization</span></div><h2>Area / Time Persistence</h2><p>Dropped objects use an internal persistence system based on area and time. The timer begins when the player leaves the relevant area.</p><ul><li>Returning before the limit pauses and resets the timer according to the rule</li><li>Objects may be removed after the limit is reached outside the relevant area</li><li>The timer is internal and does not need to be shown to the player</li></ul></article>
+        <div class="lantern-pair">
+          <article class="lantern reveal"><span class="mechanic-index">09 / LTR</span><h3>METALIC</h3><p class="muted">The older NRG: Company model. Cheaper, purchased at the beginning because it fits the protagonist's budget, and also found inside the complex.</p><div class="spec"><span>Power</span><strong>Specific battery / cell</strong><span>Durability</span><strong>Yes</strong><span>Failure</span><strong>Incompatible battery can damage or burn the flashlight</strong><span>Replacement</span><strong>Find another unit after it breaks</strong><span>Interaction</span><strong>Custom battery-swap animation</strong></div></article>
+          <article class="lantern reveal"><span class="mechanic-index">10 / LTI</span><h3>CARBON</h3><p class="muted">The newer, more compact NRG: Company model. More expensive and unavailable for purchase at the start; it is found inside the complex.</p><div class="spec"><span>Power</span><strong>Induction / movement</strong><span>Interaction</span><strong>Shake the flashlight to generate stored energy</strong><span>Energy</span><strong>Stored charge decreases during use</strong><span>Durability</span><strong>Yes</strong><span>Replacement</span><strong>Find another unit after it breaks</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mechanics-footer"><div class="reveal"><p class="kicker">DESIGN PHILOSOPHY</p><h2>Do not manage<br><em>slots.</em></h2></div><div class="reveal"><p>The equipment and inventory should exist in the world, not only inside the HUD. The protagonist has no weapons for fighting creatures. Threats are meant to push the player toward escape, hiding and decisions, while the equipment systems themselves can create vulnerability.</p><div class="status-note"><strong>NOTE //</strong> Exact backpack capacity, weights, densities, volumes, drop probabilities, persistence times and other numeric values are not yet defined in the current design document.</div></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-brand"><img src="assets/necron-official.png" alt="" class="footer-mark"><div><strong>NECRON STUDIOS</strong><small>VOID / Dynamic Systems</small></div></div><div class="footer-links"><a href="void.html">VOID</a><a href="timeline.html">Archive</a><a href="studio.html">Studio</a><a href="contact.html">Contact</a></div><div class="footer-copy">© <span data-year>2026</span> NECRON STUDIOS</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
